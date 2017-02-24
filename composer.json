@@ -1,0 +1,25 @@
+{
+	"name": "file-integrity-check",
+	"description": "Checks the integrity of packages using `sha256`digests.",
+	"keywords": [ "sha256", "hash", "integrity" ],
+	"homepage": "https://github.com/jedi58/file-integrity-check",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "David G. Paul"
+		}
+	],
+    "require": {
+    	"php": ">=5.6.0",
+        "symfony/console": "^3.2"
+    },
+    "require-dev": {
+    	"phpunit/phpunit": "*"
+    },
+    "autoload": {
+    	"psr-4": { "Inachis\\Component\\FileIntegrityCheck\\": "src/" },
+    	"exclude-from-classmap": [
+    		"/tests/"
+    	]
+    }
+}
