@@ -1,8 +1,8 @@
 {
-	"name": "file-integrity-check",
+	"name": "package-integrity-check",
 	"description": "Checks the integrity of packages using `sha256`digests.",
 	"keywords": [ "sha256", "hash", "integrity" ],
-	"homepage": "https://github.com/jedi58/file-integrity-check",
+	"homepage": "https://github.com/jedi58/package-integrity-check",
 	"license": "MIT",
 	"authors": [
 		{
@@ -17,9 +17,12 @@
     	"phpunit/phpunit": "*"
     },
     "autoload": {
-    	"psr-4": { "Inachis\\Component\\FileIntegrityCheck\\": "src/" },
+    	"psr-4": { "Inachis\\Component\\PackageIntegrityChecker\\": "src/" },
     	"exclude-from-classmap": [
     		"/tests/"
     	]
-    }
+    },
+	"bin": [
+		"bin/pic"
+	]
 }

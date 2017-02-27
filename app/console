@@ -7,7 +7,7 @@ set_time_limit(0);
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Inachis\Component\FileIntegrityCheck\Console\Application;
+use Inachis\Component\PackageIntegrityChecker\Console\Application;
 
 $app = new Application();
 $app->run();

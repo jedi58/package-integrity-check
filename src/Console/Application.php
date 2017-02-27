@@ -1,16 +1,16 @@
 <?php
-namespace Inachis\Component\FileIntegrityCheck\Console;
+namespace Inachis\Component\PackageIntegrityChecker\Console;
 
 use Symfony\Component\Console\Application as BaseApplication;
-use Inachis\Component\FileIntegrityCheck\Console\Command\CreateCommand;
-use Inachis\Component\FileIntegrityCheck\Console\Command\VerifyCommand;
+use Inachis\Component\PackageIntegrityChecker\Console\Command\CreateCommand;
+use Inachis\Component\PackageIntegrityChecker\Console\Command\VerifyCommand;
 
 /**
- * Application class for handling console access to Jira
+ * Application class
  */
 class Application extends BaseApplication
 {
-    const NAME = 'File Integrity Checker';
+    const NAME = 'Package Integrity Checker';
     const VERSION = '1.0.0';
 
     public function __construct()
@@ -18,7 +18,7 @@ class Application extends BaseApplication
         parent::__construct(static::NAME, static::VERSION);
 
         $this->addCommands(array(
-            new CreateComment(),
+            new CreateCommand(),
             new VerifyCommand()
         ));
     }
