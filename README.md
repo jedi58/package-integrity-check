@@ -1,4 +1,4 @@
-# file-integrity-check
+# package-integrity-check
 Checks the integrity of packages using `sha256`digests.
 
 ## Create Checksum Manifrst
