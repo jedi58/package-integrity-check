@@ -40,9 +40,12 @@ class CreateCommand extends CommandAbstract
                 '.'
             );
         }
+        $output->writeln(
+            sprintf('Creating checksum manifest for %s', $input->getOption('path'))
+        );
     }
     /**
-     * Adds the comment and outputs the key of the new comment
+     * Creates a checksum manifest file for the target path
      * @param InputInterface $input The console input object
      * @param OutputInterface $output The console output object
      */

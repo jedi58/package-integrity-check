@@ -40,11 +40,15 @@ class VerifyCommand extends CommandAbstract
                 '.'
             );
         }
+        $output->writeln(
+            sprintf('Verifying checksum manifest for %s', $input->getOption('path'))
+        );
     }
     /**
-     * Adds the comment and outputs the key of the new comment
+     * Verifies all hashes in the manifest against the target path
      * @param InputInterface $input The console input object
      * @param OutputInterface $output The console output object
+     * @return null
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
