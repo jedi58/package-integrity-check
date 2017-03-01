@@ -1,7 +1,7 @@
 # package-integrity-check
 Checks the integrity of packages using `sha256`digests.
 
-## Create Checksum Manifrst
+## Create Checksum Manifest
 To create a new checksum you can use the following:
 
 ```bash
