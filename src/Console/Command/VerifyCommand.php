@@ -63,13 +63,13 @@ class VerifyCommand extends CommandAbstract
                     $output->writeln(sprintf('%s does not match', $failure));
                 }
             }
-        } else {
-            $output->writeln(
-                sprintf(
-                    '<info>✓ Done.</info>' . PHP_EOL . '%d files checked successfully',
-                    $package->getNumFilesChecked()
-                )
-            );
+            return null;
         }
+        $output->writeln(
+            sprintf(
+                '<info>✓ Done.</info>' . PHP_EOL . '%d files checked successfully',
+                $package->getNumFilesChecked()
+            )
+        );
     }
 }
