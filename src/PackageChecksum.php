@@ -33,7 +33,6 @@ class PackageChecksum
      */
     public function __construct()
     {
-
     }
     /**
      * @param $filename
