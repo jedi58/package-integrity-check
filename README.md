@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/jedi58/package-integrity-check.svg?branch=master)](https://travis-ci.org/jedi58/package-integrity-check)
 [![Code Climate](https://codeclimate.com/github/jedi58/package-integrity-check/badges/gpa.svg)](https://codeclimate.com/github/jedi58/package-integrity-check)
 [![Test Coverage](https://codeclimate.com/github/jedi58/package-integrity-check/badges/coverage.svg)](https://codeclimate.com/github/jedi58/package-integrity-check/coverage)
+[![StyleCI](https://styleci.io/repos/83028526/shield?branch=master)](https://styleci.io/repos/83028526)
 
 Checks the integrity of packages using `sha256`digests.
 
