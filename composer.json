@@ -1,5 +1,5 @@
 {
-	"name": "package-integrity-check",
+	"name": "jedi58/package-integrity-check",
 	"description": "Checks the integrity of packages using `sha256`digests.",
 	"keywords": [ "sha256", "hash", "integrity" ],
 	"homepage": "https://github.com/jedi58/package-integrity-check",
